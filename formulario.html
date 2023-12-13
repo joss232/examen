@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario para registrarse en la aplicación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+        <h1>Formulario de registro  </h1>
+        
+         
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos Principales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br>
+
+            <label for="cedula">Cedula:</label>
+            <input type="text" id="cedula" name="cedula" required><br>
+
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="sexo_masculino" name="sexo" value="Masculino" required>
+            <label for="sexo_masculino">Masculino</label>
+            <input type="radio" id="sexo_femenino" name="sexo" value="Femenino" required>
+            <label for="sexo_femenino">Femenino</label><br>
+
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required><br>
+
+            
+
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia" required>
+                <option value="Bocas del Toro">Bocas del Toro</option>
+                <option value="Chiriquí">Chiriquí</option>
+                <option value="Coclé">Coclé</option>
+                <option value="Colón">Colón</option>
+                <option value="Darién">Darién</option>
+                <option value="Herrera">Herrera</option>
+                <option value="Los Santos">Los Santos</option>
+                <option value="Panamá">Panamá</option>
+                <option value="Veraguas">Veraguas</option>
+                <option value="Panamá Oeste ">Panamá Oeste</option>
+            </select><br>
+
+            <label for="imagen">Subir imagen:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de conexión</legend>
+            <label for="nombre_usuario">Nombre de usuario:</label>
+            <input type="text" id="nombre_usuario" name="nombre_usuario" required><br>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required><br>
+
+            <label for="repetir_contrasena">Repetir la contraseña:</label>
+            <input type="password" id="repetir_contrasena" name="repetir_contrasena" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <label for="salario">Salario o Ingreso personal:</label>
+            <input type="text" id="salario" name="salario" required><br>
+        
+            <label for="ingreso_familiar">Ingreso familiar:</label>
+            <select id="ingreso_familiar" name="ingreso_familiar" required>
+                <option value="Menos de 500">$500 o menos</option>
+                <option value="Entre 500 y 1000">$500 - $1000</option>
+                <option value="Más de 1000">Más de $1000</option>
+                <option value="Más de 2000">Más de $1500</option>
+            </select><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Empleo o empresa</legend>
+            <label for="ingrese empleo">ingrese empleo:</label>
+            <input type="text" id="empleo" name="empleo" required><br>
+            <label for="ingrese el nombre de la empresa">ingrese el nombre de la empresa:</label>
+            <input type="text" id="empresa" name="empresa" required><br>
+           
+    
+            
+        </fieldset>
+
+        </fieldset>
+            <legend>para mantenerse informado ingrese su correo electronico</legend>
+            <label for="ingrese un correo electronico"> </label>
+            <input type="text" id="correo" name="correo" required><br>
+
+        </fieldset>
+    
+         
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
